@@ -1,6 +1,4 @@
 @import "tailwindcss";
-@import "tw-animate-css";
-@import "shadcn/tailwind.css";
 
 @theme {
   --color-violet: hsl(257, 40%, 49%);
@@ -26,6 +24,7 @@
 
 @utility social-icon {
   @apply hover:text-soft-magenta grid size-7 place-items-center rounded-full border border-current transition-colors lg:size-10;
+  @apply focus-visible:ring-offset-violet focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:outline-none;
 }
 
 @utility footer-link {
