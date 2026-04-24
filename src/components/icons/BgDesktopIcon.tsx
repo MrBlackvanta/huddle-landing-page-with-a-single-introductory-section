@@ -1,4 +1,12 @@
+'use client';
+
+import { useId } from 'react';
+
 export default function BgDesktopIcon(props: React.SVGProps<SVGSVGElement>) {
+  const uid = useId();
+  const id = (key: string) => `${uid}-${key}`;
+  const ref = (key: string) => `url(#${id(key)})`;
+
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -9,7 +17,7 @@ export default function BgDesktopIcon(props: React.SVGProps<SVGSVGElement>) {
     >
       <defs>
         <linearGradient
-          id="a"
+          id={id("a")}
           x1="-45.25%"
           x2="97.789%"
           y1="-88.077%"
@@ -20,7 +28,7 @@ export default function BgDesktopIcon(props: React.SVGProps<SVGSVGElement>) {
           <stop offset="100%" stopColor="#9952FF" stopOpacity={0} />
         </linearGradient>
         <linearGradient
-          id="b"
+          id={id("b")}
           x1="-64.06%"
           x2="97.789%"
           y1="-121.906%"
@@ -31,7 +39,7 @@ export default function BgDesktopIcon(props: React.SVGProps<SVGSVGElement>) {
           <stop offset="100%" stopColor="#9952FF" stopOpacity={0} />
         </linearGradient>
         <linearGradient
-          id="c"
+          id={id("c")}
           x1="100%"
           x2="-24.893%"
           y1="111.373%"
@@ -41,7 +49,7 @@ export default function BgDesktopIcon(props: React.SVGProps<SVGSVGElement>) {
           <stop offset="100%" stopColor="#9952FF" />
         </linearGradient>
         <linearGradient
-          id="d"
+          id={id("d")}
           x1="21.681%"
           x2="145.861%"
           y1="5.006%"
@@ -51,7 +59,7 @@ export default function BgDesktopIcon(props: React.SVGProps<SVGSVGElement>) {
           <stop offset="100%" stopColor="#9952FF" />
         </linearGradient>
         <linearGradient
-          id="e"
+          id={id("e")}
           x1="6.375%"
           x2="91.754%"
           y1="-15.195%"
@@ -63,22 +71,22 @@ export default function BgDesktopIcon(props: React.SVGProps<SVGSVGElement>) {
       </defs>
       <g fill="none" fillRule="evenodd">
         <path
-          fill="url(#a)"
+          fill={ref("a")}
           d="M0 0h409.224l425.593 376v156.83z"
           transform="matrix(-1 0 0 1 834.817 0)"
         />
         <path
-          fill="url(#b)"
+          fill={ref("b")}
           d="m0 367 641.153.138L1057.3 673.299V801z"
           transform="rotate(180 528.65 584)"
         />
-        <circle cx={704} cy={563} r={49} stroke="url(#c)" strokeWidth={17} />
+        <circle cx={704} cy={563} r={49} stroke={ref("c")} strokeWidth={17} />
         <rect
           width={38}
           height={38}
           x={1088.87}
           y={689.87}
-          fill="url(#d)"
+          fill={ref("d")}
           opacity={0.558}
           rx={3}
           transform="rotate(45 1107.87 708.87)"
@@ -88,7 +96,7 @@ export default function BgDesktopIcon(props: React.SVGProps<SVGSVGElement>) {
           height={56}
           x={1251.598}
           y={75.598}
-          fill="url(#d)"
+          fill={ref("d")}
           opacity={0.503}
           rx={3}
           transform="rotate(45 1279.598 103.598)"
@@ -98,7 +106,7 @@ export default function BgDesktopIcon(props: React.SVGProps<SVGSVGElement>) {
           height={32}
           x={918.627}
           y={47.627}
-          fill="url(#d)"
+          fill={ref("d")}
           opacity={0.558}
           rx={3}
           transform="rotate(45 934.627 63.627)"
@@ -108,7 +116,7 @@ export default function BgDesktopIcon(props: React.SVGProps<SVGSVGElement>) {
           height={32}
           x={687.627}
           y={170.627}
-          fill="url(#d)"
+          fill={ref("d")}
           opacity={0.558}
           rx={3}
           transform="rotate(45 703.627 186.627)"
@@ -118,13 +126,13 @@ export default function BgDesktopIcon(props: React.SVGProps<SVGSVGElement>) {
           height={17}
           x={1228.521}
           y={597.521}
-          fill="url(#d)"
+          fill={ref("d")}
           opacity={0.387}
           rx={1}
           transform="rotate(45 1237.02 606.02)"
         />
         <path
-          fill="url(#e)"
+          fill={ref("e")}
           d="M91.477 739.477v-16.5a5 5 0 0 1 10 0v16.5h16.5a5 5 0 0 1 0 10h-16.5v16.5a5 5 0 1 1-10 0v-16.5h-16.5a5 5 0 1 1 0-10h16.5z"
           opacity={0.211}
           transform="rotate(45 96.477 744.477)"

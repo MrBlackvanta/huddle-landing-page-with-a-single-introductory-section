@@ -1,4 +1,12 @@
+'use client';
+
+import { useId } from 'react';
+
 export default function BgMobileIcon(props: React.SVGProps<SVGSVGElement>) {
+  const uid = useId();
+  const id = (key: string) => `${uid}-${key}`;
+  const ref = (key: string) => `url(#${id(key)})`;
+
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -9,7 +17,7 @@ export default function BgMobileIcon(props: React.SVGProps<SVGSVGElement>) {
     >
       <defs>
         <linearGradient
-          id="a"
+          id={id("a")}
           x1="221.401%"
           x2="-5.513%"
           y1="-103.001%"
@@ -20,7 +28,7 @@ export default function BgMobileIcon(props: React.SVGProps<SVGSVGElement>) {
           <stop offset="100%" stopColor="#9952FF" stopOpacity={0} />
         </linearGradient>
         <linearGradient
-          id="b"
+          id={id("b")}
           x1="212.128%"
           x2="-5.513%"
           y1="-106.466%"
@@ -31,7 +39,7 @@ export default function BgMobileIcon(props: React.SVGProps<SVGSVGElement>) {
           <stop offset="100%" stopColor="#9952FF" stopOpacity={0} />
         </linearGradient>
         <linearGradient
-          id="c"
+          id={id("c")}
           x1="21.681%"
           x2="145.861%"
           y1="5.006%"
@@ -42,9 +50,9 @@ export default function BgMobileIcon(props: React.SVGProps<SVGSVGElement>) {
         </linearGradient>
       </defs>
       <g fill="none" fillRule="evenodd">
-        <path fill="url(#a)" d="M0 265.7 319.689 0H375v73.607L0 313.664z" />
+        <path fill={ref("a")} d="M0 265.7 319.689 0H375v73.607L0 313.664z" />
         <path
-          fill="url(#b)"
+          fill={ref("b")}
           d="M0 318.687 375 102v119.176L0 360.228z"
           transform="matrix(-1 0 0 1 375 0)"
         />
@@ -53,7 +61,7 @@ export default function BgMobileIcon(props: React.SVGProps<SVGSVGElement>) {
           height={28}
           x={318.799}
           y={166.799}
-          fill="url(#c)"
+          fill={ref("c")}
           opacity={0.558}
           rx={3}
           transform="rotate(45 332.799 180.799)"
@@ -63,7 +71,7 @@ export default function BgMobileIcon(props: React.SVGProps<SVGSVGElement>) {
           height={9}
           x={117.864}
           y={361.864}
-          fill="url(#c)"
+          fill={ref("c")}
           opacity={0.387}
           rx={1}
           transform="rotate(45 122.364 366.364)"
@@ -73,7 +81,7 @@ export default function BgMobileIcon(props: React.SVGProps<SVGSVGElement>) {
           height={18}
           x={155.728}
           y={335.728}
-          fill="url(#c)"
+          fill={ref("c")}
           opacity={0.387}
           rx={1}
           transform="rotate(45 164.728 344.728)"
@@ -83,7 +91,7 @@ export default function BgMobileIcon(props: React.SVGProps<SVGSVGElement>) {
           height={14}
           x={132.728}
           y={79.899}
-          fill="url(#c)"
+          fill={ref("c")}
           opacity={0.387}
           rx={1}
           transform="rotate(45 139.728 86.9)"
@@ -93,7 +101,7 @@ export default function BgMobileIcon(props: React.SVGProps<SVGSVGElement>) {
           height={17}
           x={316.521}
           y={335.521}
-          fill="url(#c)"
+          fill={ref("c")}
           opacity={0.387}
           rx={1}
           transform="rotate(45 325.02 344.02)"
@@ -103,7 +111,7 @@ export default function BgMobileIcon(props: React.SVGProps<SVGSVGElement>) {
           height={42}
           x={42.598}
           y={261.497}
-          fill="url(#c)"
+          fill={ref("c")}
           opacity={0.503}
           rx={3}
           transform="rotate(45 63.598 282.497)"

@@ -1,3 +1,5 @@
+"use client";
+
 import { useId } from "react";
 
 export default function IllustrationMockupsIcon(
@@ -6,6 +8,7 @@ export default function IllustrationMockupsIcon(
   const uid = useId();
   const id = (key: string) => `${uid}-${key}`;
   const ref = (key: string) => `url(#${id(key)})`;
+
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
