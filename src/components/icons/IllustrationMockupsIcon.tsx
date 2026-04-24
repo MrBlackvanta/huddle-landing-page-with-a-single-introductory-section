@@ -1,6 +1,11 @@
+import { useId } from "react";
+
 export default function IllustrationMockupsIcon(
   props: React.SVGProps<SVGSVGElement>,
 ) {
+  const uid = useId();
+  const id = (key: string) => `${uid}-${key}`;
+  const ref = (key: string) => `url(#${id(key)})`;
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -12,7 +17,7 @@ export default function IllustrationMockupsIcon(
     >
       <defs>
         <filter
-          id="a"
+          id={id("a")}
           width="103.2%"
           height="105.1%"
           x="-1.6%"
@@ -31,7 +36,7 @@ export default function IllustrationMockupsIcon(
           />
         </filter>
         <filter
-          id="c"
+          id={id("c")}
           width="103.2%"
           height="147.9%"
           x="-1.6%"
@@ -50,7 +55,7 @@ export default function IllustrationMockupsIcon(
           />
         </filter>
         <filter
-          id="h"
+          id={id("h")}
           width="108.2%"
           height="105.1%"
           x="-4.1%"
@@ -69,7 +74,7 @@ export default function IllustrationMockupsIcon(
           />
         </filter>
         <filter
-          id="j"
+          id={id("j")}
           width="108.2%"
           height="148.1%"
           x="-4.1%"
@@ -88,7 +93,7 @@ export default function IllustrationMockupsIcon(
           />
         </filter>
         <linearGradient
-          id="e"
+          id={id("e")}
           x1="14.811%"
           x2="75.996%"
           y1="-22.362%"
@@ -97,34 +102,40 @@ export default function IllustrationMockupsIcon(
           <stop offset="0%" stopColor="#FAD961" />
           <stop offset="100%" stopColor="#FF52C1" />
         </linearGradient>
-        <linearGradient id="f" x1="50%" x2="50%" y1="0%" y2="100%">
+        <linearGradient id={id("f")} x1="50%" x2="50%" y1="0%" y2="100%">
           <stop offset="0%" stopColor="#00C7FA" />
           <stop offset="100%" stopColor="#007DFA" />
         </linearGradient>
-        <linearGradient id="g" x1="28.973%" x2="90.2%" y1="0%" y2="111.244%">
+        <linearGradient
+          id={id("g")}
+          x1="28.973%"
+          x2="90.2%"
+          y1="0%"
+          y2="111.244%"
+        >
           <stop offset="0%" stopColor="#FF52C1" />
           <stop offset="100%" stopColor="#9952FF" />
         </linearGradient>
         <path
-          id="d"
+          id={id("d")}
           d="M13.7 0h630.237c7.567 0 13.7 6.134 13.7 13.7v30.122H0V13.701C0 6.134 6.134 0 13.7 0z"
         />
         <path
-          id="i"
+          id={id("i")}
           d="M11.691 0h195.83c6.457 0 11.692 5.234 11.692 11.691v327.195c0 6.457-5.235 11.692-11.692 11.692H11.691C5.234 350.578 0 345.343 0 338.886V11.691C0 5.234 5.234 0 11.691 0z"
         />
         <path
-          id="k"
+          id={id("k")}
           d="M11.691 0h195.83c6.457 0 11.692 5.234 11.692 11.691v25.704H0V11.691C0 5.234 5.234 0 11.691 0z"
         />
-        <rect id="b" width={657.638} height={410.833} rx={13.701} />
+        <rect id={id("b")} width={657.638} height={410.833} rx={13.701} />
       </defs>
       <g fill="none" fillRule="evenodd">
         <g transform="translate(7 7)">
-          <use xlinkHref="#b" fill="#000" filter="url(#a)" />
-          <use xlinkHref="#b" fill="#FFF" />
-          <use xlinkHref="#d" fill="#000" filter="url(#c)" />
-          <use xlinkHref="#d" fill="#00252E" />
+          <use xlinkHref={`#${id("b")}`} fill="#000" filter={ref("a")} />
+          <use xlinkHref={`#${id("b")}`} fill="#FFF" />
+          <use xlinkHref={`#${id("d")}`} fill="#000" filter={ref("c")} />
+          <use xlinkHref={`#${id("d")}`} fill="#00252E" />
           <rect
             width={137.008}
             height={16.433}
@@ -142,7 +153,7 @@ export default function IllustrationMockupsIcon(
             <ellipse
               cx={32.882}
               cy={32.867}
-              fill="url(#e)"
+              fill={ref("e")}
               rx={32.882}
               ry={32.867}
             />
@@ -164,7 +175,7 @@ export default function IllustrationMockupsIcon(
             <ellipse
               cx={30.827}
               cy={30.813}
-              fill="url(#f)"
+              fill={ref("f")}
               rx={30.827}
               ry={30.813}
             />
@@ -184,7 +195,7 @@ export default function IllustrationMockupsIcon(
             <ellipse
               cx={30.827}
               cy={30.813}
-              fill="url(#g)"
+              fill={ref("g")}
               rx={30.827}
               ry={30.813}
             />
@@ -203,12 +214,12 @@ export default function IllustrationMockupsIcon(
           </g>
         </g>
         <g transform="translate(483.787 149.422)">
-          <use xlinkHref="#i" fill="#000" filter="url(#h)" />
-          <use xlinkHref="#i" fill="#FFF" />
+          <use xlinkHref={`#${id("i")}`} fill="#000" filter={ref("h")} />
+          <use xlinkHref={`#${id("i")}`} fill="#FFF" />
         </g>
         <g transform="translate(483.787 149.422)">
-          <use xlinkHref="#k" fill="#000" filter="url(#j)" />
-          <use xlinkHref="#k" fill="#00252E" />
+          <use xlinkHref={`#${id("k")}`} fill="#000" filter={ref("j")} />
+          <use xlinkHref={`#${id("k")}`} fill="#00252E" />
         </g>
         <g transform="translate(505.8 162.277)">
           <rect width={71.244} height={14.023} fill="#E1E8EE" rx={2.923} />
@@ -222,7 +233,7 @@ export default function IllustrationMockupsIcon(
           <ellipse
             cx={10.276}
             cy={10.271}
-            fill="url(#e)"
+            fill={ref("e")}
             rx={10.276}
             ry={10.271}
           />
@@ -237,7 +248,7 @@ export default function IllustrationMockupsIcon(
           <ellipse
             cx={10.276}
             cy={10.271}
-            fill="url(#e)"
+            fill={ref("e")}
             rx={10.276}
             ry={10.271}
           />
@@ -258,7 +269,7 @@ export default function IllustrationMockupsIcon(
           <ellipse
             cx={10.276}
             cy={10.271}
-            fill="url(#f)"
+            fill={ref("f")}
             rx={10.276}
             ry={10.271}
           />
@@ -273,7 +284,7 @@ export default function IllustrationMockupsIcon(
           <ellipse
             cx={10.276}
             cy={10.271}
-            fill="url(#f)"
+            fill={ref("f")}
             rx={10.276}
             ry={10.271}
           />
@@ -288,7 +299,7 @@ export default function IllustrationMockupsIcon(
           <ellipse
             cx={10.276}
             cy={10.271}
-            fill="url(#g)"
+            fill={ref("g")}
             rx={10.276}
             ry={10.271}
           />
@@ -303,7 +314,7 @@ export default function IllustrationMockupsIcon(
           <ellipse
             cx={10.276}
             cy={10.271}
-            fill="url(#g)"
+            fill={ref("g")}
             rx={10.276}
             ry={10.271}
           />
@@ -312,7 +323,7 @@ export default function IllustrationMockupsIcon(
           <ellipse
             cx={10.276}
             cy={10.271}
-            fill="url(#e)"
+            fill={ref("e")}
             rx={10.276}
             ry={10.271}
           />
@@ -333,7 +344,7 @@ export default function IllustrationMockupsIcon(
           <ellipse
             cx={10.276}
             cy={10.271}
-            fill="url(#f)"
+            fill={ref("f")}
             rx={10.276}
             ry={10.271}
           />

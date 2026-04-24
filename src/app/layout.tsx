@@ -37,7 +37,7 @@ export default function RootLayout({
       lang="en"
       className={`${poppins.variable} ${openSans.variable} h-full antialiased`}
     >
-      <body className="bg-violet grid min-h-dvh w-full grid-rows-[1fr_auto]">
+      <body className="bg-violet min-h-dvh w-full">
         {children}
         <Footer />
       </body>
