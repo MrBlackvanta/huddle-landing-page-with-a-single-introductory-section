@@ -11,12 +11,6 @@
 }
 
 @layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
   html {
     @apply font-poppins;
   }
@@ -37,4 +31,9 @@
 @utility footer-link {
   @apply rounded-xs font-bold text-white;
   @apply focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-white focus-visible:outline-none;
+}
+
+@utility btn-primary {
+  @apply text-violet shadow-btn hover:bg-soft-magenta hover:shadow-btn-hover h-10 w-50 cursor-pointer rounded-full bg-white text-xs leading-4.5 transition-all duration-300 hover:-translate-y-0.5 hover:text-white lg:h-14 lg:text-lg lg:leading-6.75;
+  @apply focus-visible:ring-offset-violet focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:outline-none;
 }

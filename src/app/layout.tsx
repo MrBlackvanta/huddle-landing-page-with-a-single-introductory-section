@@ -35,9 +35,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${poppins.variable} ${openSans.variable} h-full antialiased`}
+      className={`${poppins.variable} ${openSans.variable} antialiased`}
     >
-      <body className="bg-violet grid min-h-dvh w-full place-content-center bg-cover bg-center bg-no-repeat lg:bg-[url('/bg-desktop.svg')]">
+      <body className="bg-violet flex min-h-dvh w-full flex-col bg-cover bg-center bg-no-repeat lg:bg-[url('/bg-desktop.svg')]">
         {children}
         <Footer />
       </body>

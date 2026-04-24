@@ -1,4 +1,3 @@
-import BgMobileIcon from "@/components/icons/BgMobileIcon";
 import FacebookIcon from "@/components/icons/FacebookIcon";
 import IllustrationMockupsIcon from "@/components/icons/IllustrationMockupsIcon";
 import InstagramIcon from "@/components/icons/InstagramIcon";
@@ -7,8 +6,7 @@ import TwitterIcon from "@/components/icons/TwitterIcon";
 
 export default function Home() {
   return (
-    <main className="relative w-full text-white lg:pt-16">
-      <BgMobileIcon className="absolute inset-s-0 top-0 w-dvw sm:hidden" />
+    <main className="relative flex w-full flex-1 items-center bg-[url('/bg-mobile.svg')] bg-top bg-no-repeat text-white lg:bg-none lg:pt-16">
       <div className="relative z-1 mx-auto max-w-150 p-9.5 lg:max-w-318.75 lg:p-0">
         <header>
           <LogoIcon
@@ -28,10 +26,7 @@ export default function Home() {
               but so does your audience. Create connections with your users as
               you engage in genuine discussion.
             </p>
-            <button
-              type="button"
-              className="text-violet shadow-btn hover:bg-soft-magenta hover:shadow-btn-hover h-10 w-50 cursor-pointer rounded-full bg-white text-xs leading-4.5 hover:text-white lg:h-14 lg:text-lg lg:leading-6.75"
-            >
+            <button type="button" className="btn-primary">
               Register
             </button>
           </section>
