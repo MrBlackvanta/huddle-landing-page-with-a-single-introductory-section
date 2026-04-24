@@ -1,4 +1,3 @@
-import BgDesktopIcon from "@/components/icons/BgDesktopIcon";
 import Footer from "@/components/layout/footer";
 import type { Metadata } from "next";
 import { Open_Sans, Poppins } from "next/font/google";
@@ -38,8 +37,7 @@ export default function RootLayout({
       lang="en"
       className={`${poppins.variable} ${openSans.variable} h-full antialiased`}
     >
-      <body className="bg-violet grid min-h-dvh w-full place-content-center">
-        <BgDesktopIcon className="fixed -top-10 hidden sm:block" />
+      <body className="bg-violet grid min-h-dvh w-full place-content-center bg-cover bg-center bg-no-repeat lg:bg-[url('/bg-desktop.svg')]">
         {children}
         <Footer />
       </body>

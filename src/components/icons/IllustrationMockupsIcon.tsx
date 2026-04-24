@@ -16,6 +16,7 @@ export default function IllustrationMockupsIcon(
       width={709}
       height={506}
       viewBox="0 0 709 506"
+      aria-hidden="true"
       {...props}
     >
       <defs>

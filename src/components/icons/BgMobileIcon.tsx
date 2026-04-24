@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { useId } from 'react';
+import { useId } from "react";
 
 export default function BgMobileIcon(props: React.SVGProps<SVGSVGElement>) {
   const uid = useId();
@@ -13,6 +13,7 @@ export default function BgMobileIcon(props: React.SVGProps<SVGSVGElement>) {
       width={375}
       height={373}
       viewBox="0 0 375 373"
+      aria-hidden="true"
       {...props}
     >
       <defs>

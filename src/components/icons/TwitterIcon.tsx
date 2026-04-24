@@ -5,6 +5,7 @@ export default function TwitterIcon(props: React.SVGProps<SVGSVGElement>) {
       width={15}
       height={15}
       viewBox="0 -2 20 20"
+      aria-hidden="true"
       {...props}
     >
       <path
