@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { useId } from 'react';
+import { useId } from "react";
 
 export default function BgDesktopIcon(props: React.SVGProps<SVGSVGElement>) {
   const uid = useId();
@@ -8,13 +8,7 @@ export default function BgDesktopIcon(props: React.SVGProps<SVGSVGElement>) {
   const ref = (key: string) => `url(#${id(key)})`;
 
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width={1318}
-      height={800}
-      viewBox="0 0 1318 800"
-      {...props}
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1318 800" {...props}>
       <defs>
         <linearGradient
           id={id("a")}

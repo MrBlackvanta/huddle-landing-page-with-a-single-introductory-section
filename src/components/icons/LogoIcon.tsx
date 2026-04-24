@@ -2,8 +2,8 @@ export default function LogoIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width={264}
-      height="49pt"
+      width={198}
+      height={49}
       viewBox="0 0 198 49"
       {...props}
     >

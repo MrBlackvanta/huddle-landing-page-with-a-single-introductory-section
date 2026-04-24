@@ -137,7 +137,19 @@
   }
 }
 
+@utility shadow-btn {
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.269022);
+}
+
+@utility shadow-btn-hover {
+  box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.258633);
+}
+
+@utility social-icon {
+  @apply hover:text-soft-magenta grid size-7 place-items-center rounded-full border border-current transition-colors lg:size-10;
+}
+
 @utility footer-link {
-  @apply text-soft-magenta rounded-xs font-bold;
-  @apply focus-visible:ring-soft-magenta focus-visible:ring-offset-soft-magenta focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none;
+  @apply rounded-xs font-bold text-white;
+  @apply focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-white focus-visible:outline-none;
 }
