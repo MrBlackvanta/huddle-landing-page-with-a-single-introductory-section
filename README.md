@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Frontend Mentor - Huddle Landing Page with a Single Introductory Section solution
 
-## Getting Started
+This is a solution to the [Huddle Landing Page with a Single Introductory Section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-First, run the development server:
+## Table of contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Overview](#overview)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Overview
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Screenshot
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+![](./screenshot.png)
 
-## Learn More
+### Links
 
-To learn more about Next.js, take a look at the following resources:
+- Solution URL: [GitHub](https://github.com/MrBlackvanta/huddle-landing-page-with-a-single-introductory-section)
+- Live Site URL: [Netlify](https://huddle-landing-page-with-a-single-introductory-section.netlify.app)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## My process
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Built with
 
-## Deploy on Vercel
+- React + Vite
+- TypeScript
+- Tailwind CSS (utility-first styling)
+- Component-based structure (`QRCodeCard` in `src/components`)
+- Mobile-first layout with responsive utilities
+- Asset imports (local image in `src/assets/image-qr-code.png`)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### What I learned
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Converting a static design into a component-based app using React props and clean markup.
+- Using Tailwind CSS classes in JSX for rapid, consistent styling and spacing.
+- Structuring the app to keep `QRCodeCard` reusable and isolated (presentation-only component).
+- Setting up the project with Vite and TypeScript for fast development and type safety.
+- Importing images in React and keeping static assets at `src/assets`.
+
+## Author
+
+- UpWork - [Abdelrhman Abdelaal](https://upwork.com/freelancers/~01f0a9479696b61f49)
+- Frontend Mentor - [@MrBlackvanta](https://www.frontendmentor.io/profile/MrBlackvanta)
+- LinkedIn - [@yourusername](https://www.linkedin.com/in/abdelrhman-vanta/)

@@ -48,6 +48,14 @@
   --radius-4xl: calc(var(--radius) * 2.6);
 }
 
+@theme {
+  --color-violet: hsl(257, 40%, 49%);
+  --color-soft-magenta: hsl(300, 69%, 71%);
+
+  --font-poppins: "Poppins", sans-serif;
+  --font-open-sans: "Open Sans", sans-serif;
+}
+
 :root {
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
