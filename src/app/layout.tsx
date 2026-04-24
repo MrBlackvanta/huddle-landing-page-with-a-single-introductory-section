@@ -1,3 +1,4 @@
+import Footer from "@/components/layout/footer";
 import type { Metadata } from "next";
 import { Open_Sans, Poppins } from "next/font/google";
 import "./globals.css";
@@ -36,7 +37,10 @@ export default function RootLayout({
       lang="en"
       className={`${poppins.variable} ${openSans.variable} h-full antialiased`}
     >
-      <body className="flex min-h-full flex-col">{children}</body>
+      <body className="bg-violet grid min-h-dvh w-full grid-rows-[1fr_auto]">
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

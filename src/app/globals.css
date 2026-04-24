@@ -133,6 +133,11 @@
     @apply bg-background text-foreground;
   }
   html {
-    @apply font-sans;
+    @apply font-poppins;
   }
+}
+
+@utility footer-link {
+  @apply text-soft-magenta rounded-xs font-bold;
+  @apply focus-visible:ring-soft-magenta focus-visible:ring-offset-soft-magenta focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none;
 }
