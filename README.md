@@ -23,7 +23,8 @@ This is a solution to the [Huddle Landing Page with a Single Introductory Sectio
 ### Links
 
 - Solution URL: [GitHub](https://github.com/MrBlackvanta/huddle-landing-page-with-a-single-introductory-section)
-- Live Site URL: [Netlify](https://vanta-huddle-landing-page.netlify.app)
+- Live Site URL: [Cloudflare](https://huddle-landing-page-with-a-single-introductory-section.abdelrhman-ahmed8881.workers.dev)
+- Mirror: [Netlify](https://vanta-huddle-landing-page.netlify.app)
 
 ## My process
 
