@@ -1,6 +1,7 @@
 import Footer from "@/components/layout/footer";
 import type { Metadata } from "next";
 import { Open_Sans, Poppins } from "next/font/google";
+import { SITE_URL } from "@/app/site";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -18,9 +19,11 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Huddle Landing Page with a Single Introductory Section",
+  metadataBase: new URL(SITE_URL),
+  title: "Huddle — build the community your fans will love",
   description:
-    "Frontend Mentor Huddle Landing Page with a Single Introductory Section challenge built with Next.js and TypeScript.",
+    "Huddle re-imagines the way we build communities. Create connections with your users as you engage in genuine discussion.",
+  alternates: { canonical: "/" },
   icons: {
     icon: [{ url: "/favicon.ico" }, { url: "/icon.png", type: "image/png" }],
     apple: [{ url: "/apple-icon.png" }],
